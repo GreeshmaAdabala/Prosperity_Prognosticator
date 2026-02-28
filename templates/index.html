@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Startup Prediction</title>
+
+<style>
+body{
+    margin:0;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    font-family:Arial;
+}
+
+.container{
+    background:white;
+    width:500px;
+    margin:40px auto;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#667eea;
+    border:none;
+    color:white;
+    border-radius:8px;
+    font-size:16px;
+}
+
+button:hover{
+    background:#5563d6;
+}
+
+h2{
+    text-align:center;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Startup Details</h2>
+
+<form action="/predict" method="post">
+
+<input name="state" placeholder="State Code" required>
+<input name="funding" placeholder="Total Funding" required>
+<input name="rounds" placeholder="Funding Rounds" required>
+<input name="vc" placeholder="Has VC (0/1)" required>
+<input name="angel" placeholder="Has Angel (0/1)" required>
+<input name="roundA" placeholder="Has Round A" required>
+<input name="roundB" placeholder="Has Round B" required>
+<input name="roundC" placeholder="Has Round C" required>
+<input name="roundD" placeholder="Has Round D" required>
+<input name="milestones" placeholder="Milestones" required>
+<input name="relationships" placeholder="Relationships" required>
+
+<button type="submit">Predict</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

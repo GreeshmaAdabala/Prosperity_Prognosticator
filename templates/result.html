@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Result</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    font-family:Arial;
+}
+
+.container{
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    width:350px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.result{
+    font-size:22px;
+    margin:20px 0;
+}
+
+a{
+    text-decoration:none;
+    color:#667eea;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Prediction Result</h2>
+
+<div class="result">{{ result }}</div>
+
+<a href="/">Go Back</a>
+
+</div>
+
+</body>
+</html>
